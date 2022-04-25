@@ -6,6 +6,9 @@ This project is about helping people to find Covid-19 test place and you can mak
 Programming Languange:
 Kotlin
 
+Database:
+Firebase
+
 Contributor:
 1. David Ivan C14190040 (Petra Christian University)
 2. ALfred     C14190016 (Petra Christian University)
