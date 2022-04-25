@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="rounded_rectangle">
+        <item name="cornerSize">22%</item>
+    </style>
+
+    <style name="corner_cut">
+        <item name="cornerSize">15dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="diamond_cut">
+        <item name="cornerSize">75dp</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="specific_corner_cut">
+        <item name="cornerSizeTopRight">75dp</item>
+        <item name="cornerFamilyTopRight">cut</item>
+
+        <item name="cornerSizeBottomLeft">75dp</item>
+        <item name="cornerFamilyBottomLeft">cut</item>
+    </style>
+
+    <style name="specific_corner_rounded">
+        <item name="cornerSizeTopRight">75dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+
+        <item name="cornerSizeBottomLeft">75dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+
+    <style name="rounded_rectangle_22dp_left">
+        <item name="cornerSizeTopLeft">22dp</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+
+        <item name="cornerSizeBottomLeft">22dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+
+</resources>

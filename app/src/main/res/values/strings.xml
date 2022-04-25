@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Test2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+
+    <string name="password_requirement">
+        Your password must be at least 8 characters. With at least 1 number and 1 special character.
+    </string>
+
+    <string name="forgot_password">
+        Enter your email address and we will send you a email to reset your password.
+    </string>
+
+    <string name="email_status_available">Available</string>
+    <string name="email_status_taken">Taken</string>
+
+    <string name="logout_alert">Are you sure want to logout?</string>
+
+    <string-array name="namarumahsakit">
+        <item>RSUD Bhakti Dharma Husada</item>
+        <item>RSUD Dr. Mohamad Soewandhie</item>
+        <item>RSUD Dr. Soetomo</item>
+        <item>RS Adi Husada Kapasari</item>
+        <item>RS Adi Husada Undaan</item>
+        <item>RS Al-Irsyad Surabaya</item>
+    </string-array>
+    <string-array name="alamatrumahsakit">
+        <item>Jl. Kendung No.115, Sememi, Kec. Benowo</item>
+        <item>Jl. Tambak Rejo No.45, Tambakrejo, Kec. Simokerto</item>
+        <item>Jl. Mayjen Prof. Dr. Moestopo No.6, Airlangga, Kec. Gubeng</item>
+        <item>Jl. Kapasari No.97, Kapasan, Kec. Simokerto</item>
+        <item>Jl. Undaan Wetan No.40, Ketabang, Kec. Genteng</item>
+        <item>Jl. KH. Mas Mansyur No.210, Nyamplungan, Kec. Pabean Cantian</item>
+    </string-array>
+    <string-array name="notelprumahsakit">
+        <item>0812345678</item>
+        <item>0812345678</item>
+        <item>0812345678</item>
+        <item>0812345678</item>
+        <item>0812345678</item>
+        <item>0812345678</item>
+    </string-array>
+    <string-array name="jamoperasionalrumahsakit">
+        <item>06.30-23.59</item>
+        <item>06.30-23.59</item>
+        <item>06.30-23.59</item>
+        <item>06.30-23.59</item>
+        <item>06.30-23.59</item>
+        <item>06.30-23.59</item>
+    </string-array>
+    <string-array name="kategoritestrumahsakit">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="ratingrumahsakit">
+        <item>5.0</item>
+        <item>5.0</item>
+        <item>5.0</item>
+        <item>5.0</item>
+        <item>5.0</item>
+        <item>5.0</item>
+    </string-array>
+    <string-array name="hargapcrrumahsakit">
+        <item>152000</item>
+        <item>170000</item>
+        <item>0</item>
+        <item>0</item>
+        <item>163000</item>
+        <item>200000</item>
+    </string-array>
+    <string-array name="hargaantigenrumahsakit">
+        <item>52000</item>
+        <item>0</item>
+        <item>70000</item>
+        <item>50000</item>
+        <item>63000</item>
+        <item>90000</item>
+    </string-array>
+    <string-array name="gambarrumahsakit">
+        <item>rsud_bhakti_dharma_husada</item>
+        <item>rsud_dr_mohamad_soewandhie</item>
+        <item>rsud_dr_soetomo</item>
+        <item>rs_adi_husada_kapasari</item>
+        <item>rs_adi_husada_undaan</item>
+        <item>rs_al_irsyad_surabaya</item>
+    </string-array>
+</resources>

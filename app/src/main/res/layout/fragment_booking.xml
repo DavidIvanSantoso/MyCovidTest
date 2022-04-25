@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pallete4"
+    tools:context=".BookingFragment">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:src="@drawable/logo_mycovidtest"
+        android:tint="@color/pallete1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/rounded_rectangle_16dp"
+            android:backgroundTint="@color/pallete1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivRSBooking"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rsud_bhakti_dharma_husada"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/rounded_rectangle" />
+
+            <TextView
+                android:id="@+id/tvKategoriPCRBooking"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_rectangle_22dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:paddingVertical="4dp"
+                android:text="PCR"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRSBooking"
+                app:layout_constraintStart_toStartOf="@+id/ivRSBooking" />
+
+            <TextView
+                android:id="@+id/tvKategoriAntigenBooking"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_rectangle_22dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:paddingVertical="4dp"
+                android:text="Antigen"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/ivRSBooking"
+                app:layout_constraintStart_toEndOf="@+id/tvKategoriPCRBooking" />
+
+            <TextView
+                android:id="@+id/tvNamaRSBooking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:text="Nama RS"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRSBooking" />
+
+            <TextView
+                android:id="@+id/tvAlamatRSBooking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Alamat"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvNamaRSBooking"
+                app:layout_constraintStart_toStartOf="@+id/tvNamaRSBooking"
+                app:layout_constraintTop_toBottomOf="@+id/tvNamaRSBooking" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_rectangle_30dp"
+                android:backgroundTint="@color/white"
+                android:padding="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAlamatRSBooking">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price List"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="128dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView27"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+                    <LinearLayout
+                        android:id="@+id/groupPCRBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PCR" />
+
+                        <TextView
+                            android:id="@+id/tvHargaPCRBooking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rp. 20000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/groupAntigenBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Antigen" />
+
+                        <TextView
+                            android:id="@+id/tvHargaAntigenBooking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rp. 10000" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgKategoriTestBooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                    <RadioButton
+                        android:id="@+id/rbPCRBooking"
+                        android:layout_width="84dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:text="PCR"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/text_radio_selector" />
+
+                    <RadioButton
+                        android:id="@+id/rbAntigenBooking"
+                        android:layout_width="84dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:text="Antigen"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/text_radio_selector" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/rounded_rectangle_16dp"
+                    android:backgroundTint="#03386d"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/rgKategoriTestBooking"
+                    app:layout_constraintTop_toBottomOf="@+id/rgKategoriTestBooking">
+
+                    <ImageButton
+                        android:id="@+id/ibMinusBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/minus"
+                        android:textAlignment="center"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvJumlahBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/ibPlusBooking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/plus"
+                        android:textAlignment="center"
+                        android:tint="@color/white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTotalRupiahBooking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:paddingHorizontal="8dp"
+                    android:text="Rp. "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:id="@+id/btnNexttoSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#03386d"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

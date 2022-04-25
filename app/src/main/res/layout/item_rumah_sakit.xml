@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemRumahSakit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/rounded_rectangle_22dp"
+    android:backgroundTint="@color/pallete1"
+    android:clickable="true"
+    android:onClick="onClick">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivRS"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rsud_bhakti_dharma_husada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/rounded_rectangle_22dp_left"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvNamaRS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="NAMA RUMAH SAKIT"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cbFavorite"
+        app:layout_constraintStart_toEndOf="@+id/ivRS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAlamatRS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="alamat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNamaRS"
+        app:layout_constraintStart_toStartOf="@+id/tvNamaRS"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaRS" />
+
+    <CheckBox
+        android:id="@+id/cbFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/favorite_selector"
+        android:buttonTint="@android:color/holo_red_dark"
+        android:checked="false"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNamaRS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNamaRS" />
+
+    <TextView
+        android:id="@+id/tvKategoriPCR"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/pallete4"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="PCR"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAlamatRS"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatRS" />
+
+    <TextView
+        android:id="@+id/tvKategoriAntigen"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/pallete4"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="Antigen"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvKategoriPCR"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatRS" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRS"
+        app:layout_constraintEnd_toEndOf="@+id/ivRS">
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:tint="@android:color/holo_orange_light"
+            app:srcCompat="@drawable/star" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Km"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemRumahSakitTransaction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/rounded_rectangle_22dp"
+    android:backgroundTint="@color/pallete1"
+    android:clickable="true"
+    android:onClick="onClick">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivRSTransaction"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rsud_bhakti_dharma_husada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/rounded_rectangle_22dp_left"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvNamaRSTransaction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="NAMA RUMAH SAKIT"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvStatusTransaction"
+        app:layout_constraintStart_toEndOf="@+id/ivRSTransaction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAlamatRSTransaction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="alamat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNamaRSTransaction"
+        app:layout_constraintStart_toStartOf="@+id/tvNamaRSTransaction"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaRSTransaction" />
+
+    <TextView
+        android:id="@+id/tvKategoriPCRTransaction"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/pallete4"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="PCR"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAlamatRSTransaction"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatRSTransaction" />
+
+    <TextView
+        android:id="@+id/tvKategoriAntigenTransaction"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/pallete4"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="Antigen"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvKategoriPCRTransaction"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatRSTransaction" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_rectangle_22dp"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRSTransaction"
+        app:layout_constraintEnd_toEndOf="@+id/ivRSTransaction">
+
+        <TextView
+            android:id="@+id/tvRatingTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView15Transaction"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star"
+            app:tint="@android:color/holo_orange_light" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatusTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Booked"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNamaRSTransaction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
